@@ -1,3 +1,5 @@
+import { Portfolio } from "./components/Portfolio";
+
 const navigation = [
   ["Обо мне", "#about"],
   ["Работы", "#portfolio"],
@@ -56,10 +58,7 @@ export default function HomePage() {
         <h2>Портфолио на основе реальных задач и интерфейсов.</h2>
       </section>
 
-      <section className="section-placeholder" id="portfolio">
-        <p className="eyebrow">Избранные работы</p>
-        <h2>Проекты будут добавлены из подтверждённого описания.</h2>
-      </section>
+      <Portfolio />
 
       <section className="section-placeholder" id="process">
         <p className="eyebrow">Процесс</p>
