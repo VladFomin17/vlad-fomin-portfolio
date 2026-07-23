@@ -51,7 +51,7 @@ export default function HomePage() {
             Смотреть проекты
           </a>
           <a className="button button-ghost" href="#contact">
-            Написать мне <span aria-hidden="true">↗</span>
+            Написать мне <span className="text-arrow" aria-hidden="true">→</span>
           </a>
         </div>
         <div className="proof-strip" aria-label="Форматы интерфейсов">

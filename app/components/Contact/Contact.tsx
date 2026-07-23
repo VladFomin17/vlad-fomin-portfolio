@@ -15,7 +15,7 @@ export function Contact() {
           target="_blank"
           rel="noreferrer"
         >
-          Написать в Telegram <span aria-hidden="true">↗</span>
+          Написать в Telegram <span className={styles.arrow} aria-hidden="true">→</span>
         </a>
         <a className={styles.secondaryLink} href="mailto:fominvladosik@gmail.com">
           fominvladosik@gmail.com

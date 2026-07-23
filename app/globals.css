@@ -168,6 +168,12 @@ h2 {
   border: 1px solid var(--line);
 }
 
+.text-arrow {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  transform: rotate(-45deg);
+}
+
 .proof-strip {
   display: flex;
   align-items: center;

@@ -19,5 +19,6 @@
 - 2026-07-23 - Refined screenshot order and added stack cursor interaction.
 - 2026-07-23 - Improved tablet/mobile layouts and added portfolio swipe navigation.
 - 2026-07-23 - Fixed intermediate-width screenshot cropping.
+- 2026-07-23 - Fixed mobile rendering of contact arrows.
 
 Move completed tasks here with date.

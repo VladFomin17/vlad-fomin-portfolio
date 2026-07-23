@@ -19,6 +19,12 @@
   transform: translateY(-2px);
 }
 
+.arrow {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  transform: rotate(-45deg);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .link {
     transition: none;
