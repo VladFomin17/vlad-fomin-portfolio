@@ -45,3 +45,6 @@ Smoothed carousel transitions and replaced FAQ details with an accessible
 single-open accordion.
 
 Fixed CTA alignment in the Process and FAQ grid sections.
+
+Reordered screenshots for GNK.club and Litsil, brought the middle Smartway
+screenshot forward, and added an interactive cursor spotlight to the stack.

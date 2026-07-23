@@ -19,6 +19,42 @@
   background:
     radial-gradient(circle at 50% 50%, rgba(183, 239, 114, 0.26), transparent 26%),
     linear-gradient(135deg, #eef4e9, #ffffff 48%, #e8efea);
+  cursor: crosshair;
+}
+
+.cursorGlow {
+  position: absolute;
+  z-index: 1;
+  top: var(--cursor-y);
+  left: var(--cursor-x);
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgba(143, 218, 63, 0.4);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(183, 239, 114, 0.38), rgba(183, 239, 114, 0) 68%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: top 180ms ease-out, left 180ms ease-out;
+  animation: cursor-pulse 2.8s ease-in-out infinite;
+}
+
+.cursorGlow::after {
+  position: absolute;
+  inset: 32px;
+  border: 1px solid rgba(100, 141, 53, 0.48);
+  border-radius: 50%;
+  content: "";
+}
+
+@keyframes cursor-pulse {
+  0%, 100% {
+    opacity: 0.58;
+    transform: translate(-50%, -50%) scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.06);
+  }
 }
 
 .constellation::before,
@@ -113,5 +149,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .badge { animation: none; }
+  .badge,
+  .cursorGlow {
+    animation: none;
+    transition: none;
+  }
 }

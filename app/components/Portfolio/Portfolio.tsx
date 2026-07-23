@@ -24,8 +24,8 @@ const projects = [
       "Адаптивный лендинг по готовому макету с фокусом на точное соответствие дизайну и производительность.",
     technologies: ["Next.js", "Tailwind CSS"],
     images: [
-      ["/projects/gnk-landing-1.jpg", "GNK.club — главный экран лендинга"],
-      ["/projects/gnk-landing-2.jpg", "GNK.club — контентная секция лендинга"]
+      ["/projects/gnk-landing-2.jpg", "GNK.club — контентная секция лендинга"],
+      ["/projects/gnk-landing-1.jpg", "GNK.club — главный экран лендинга"]
     ]
   },
   {
@@ -61,8 +61,8 @@ const projects = [
       "Административная панель для производственных задач, пользователей и номенклатуры, спроектированная с учётом взаимодействия с мобильным приложением на React Native.",
     technologies: ["React Native"],
     images: [
-      ["/projects/litsil-tasks.jpg", "Litsil — конструктор производственных задач"],
-      ["/projects/litsil-config.jpg", "Litsil — конфигурация интеграции с 1С"]
+      ["/projects/litsil-config.jpg", "Litsil — конфигурация интеграции с 1С"],
+      ["/projects/litsil-tasks.jpg", "Litsil — конструктор производственных задач"]
     ]
   },
   {
@@ -107,7 +107,9 @@ export function Portfolio() {
           >
             {projects.map((project, index) => (
               <article
-                className={`${styles.project} ${index === activeIndex ? styles.active : ""}`}
+                className={`${styles.project} ${index === activeIndex ? styles.active : ""} ${
+                  project.title === "Smartway" ? styles.smartway : ""
+                }`}
                 key={project.title}
                 aria-hidden={index !== activeIndex}
               >
