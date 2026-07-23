@@ -5,14 +5,19 @@ export function Contact() {
     <section className={styles.section} id="contact">
       <p className="eyebrow">Контакты</p>
       <h2>Есть задача с интерфейсом? Давайте обсудим.</h2>
-      <a
-        className={styles.link}
-        href="https://github.com/VladFomin17"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Открыть GitHub <span aria-hidden="true">↗</span>
-      </a>
+      <div className={styles.links}>
+        <a
+          className={styles.primaryLink}
+          href="https://t.me/Vlad_Fomii"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Написать в Telegram <span aria-hidden="true">↗</span>
+        </a>
+        <a className={styles.secondaryLink} href="mailto:fominvladosik@gmail.com">
+          fominvladosik@gmail.com
+        </a>
+      </div>
     </section>
   );
 }

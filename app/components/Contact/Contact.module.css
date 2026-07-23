@@ -8,19 +8,39 @@
   max-width: 1000px;
 }
 
-.link {
-  display: inline-flex;
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
   margin-top: 2.5rem;
+}
+
+.primaryLink,
+.secondaryLink {
+  display: inline-flex;
   padding: 1rem 1.25rem;
   border-radius: 999px;
-  background: var(--accent);
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-.link:hover,
-.link:focus-visible {
+.primaryLink {
+  background: var(--accent);
+}
+
+.primaryLink:hover,
+.primaryLink:focus-visible {
   background: var(--accent-strong);
+}
+
+.secondaryLink {
+  border: 1px solid var(--line);
+}
+
+.secondaryLink:hover,
+.secondaryLink:focus-visible {
+  border-color: var(--ink);
 }
 
 @media (max-width: 760px) {

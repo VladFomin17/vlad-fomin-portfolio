@@ -24,3 +24,5 @@ Added source-backed About, Services, Process, and Contact sections. Removed the
 temporary email placeholder and linked only the verified GitHub profile.
 
 Aligned the README and task list with the implemented project structure.
+
+Added the supplied FAQ content and primary Telegram and email contact actions.

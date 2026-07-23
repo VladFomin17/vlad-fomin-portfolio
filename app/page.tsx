@@ -1,5 +1,6 @@
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
+import { Faq } from "./components/Faq";
 import { Portfolio } from "./components/Portfolio";
 import { Process } from "./components/Process";
 import { Services } from "./components/Services";
@@ -9,6 +10,7 @@ const navigation = [
   ["Услуги", "#services"],
   ["Работы", "#portfolio"],
   ["Процесс", "#process"],
+  ["FAQ", "#faq"],
   ["Контакты", "#contact"]
 ];
 
@@ -62,6 +64,7 @@ export default function HomePage() {
       <Services />
       <Portfolio />
       <Process />
+      <Faq />
       <Contact />
     </main>
   );

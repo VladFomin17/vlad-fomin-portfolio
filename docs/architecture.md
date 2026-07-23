@@ -5,7 +5,7 @@
 - `app/layout.tsx` - global metadata and document shell.
 - `app/page.tsx` - single landing-page route.
 - `app/components/Portfolio/` - data-backed project section and gallery styles.
-- `app/components/About/`, `Services/`, `Process/`, `Contact/` - semantic landing-page sections.
+- `app/components/About/`, `Services/`, `Process/`, `Faq/`, `Contact/` - semantic landing-page sections.
 - `app/globals.css` - shared design tokens and responsive layout styles.
 - `docs/` - project documentation.
 
@@ -18,5 +18,5 @@ CSS scroll-snap gallery without client-side state.
 Metadata is defined in `app/layout.tsx`, including the page title,
 description, and Open Graph basics.
 
-Content is limited to statements supported by the supplied portfolio document.
-The verified GitHub profile is currently the only contact destination.
+Content is limited to statements supplied by the portfolio owner. FAQ answers,
+Telegram, and email are rendered directly from the confirmed contact details.
