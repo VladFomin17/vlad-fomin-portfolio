@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, type CSSProperties } from "react";
+import { useRef, useState, type CSSProperties, type TouchEvent } from "react";
 import styles from "./Portfolio.module.css";
 import { SectionCta } from "../SectionCta";
 
@@ -80,9 +80,17 @@ const projects = [
 
 export function Portfolio() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const touchStart = useRef<number | null>(null);
 
   const move = (direction: number) => {
     setActiveIndex((current) => (current + direction + projects.length) % projects.length);
+  };
+
+  const handleTouchEnd = (event: TouchEvent<HTMLDivElement>) => {
+    if (touchStart.current === null) return;
+    const distance = event.changedTouches[0].clientX - touchStart.current;
+    if (Math.abs(distance) > 45) move(distance > 0 ? -1 : 1);
+    touchStart.current = null;
   };
 
   return (
@@ -100,7 +108,14 @@ export function Portfolio() {
         >
           ←
         </button>
-        <div className={styles.viewport} aria-live="polite">
+        <div
+          className={styles.viewport}
+          aria-live="polite"
+          onTouchStart={(event) => {
+            touchStart.current = event.touches[0].clientX;
+          }}
+          onTouchEnd={handleTouchEnd}
+        >
           <div
             className={styles.track}
             style={{ "--active-index": activeIndex } as CSSProperties}

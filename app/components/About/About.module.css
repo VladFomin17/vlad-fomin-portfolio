@@ -23,6 +23,18 @@
   margin-top: 1.5rem;
 }
 
+@media (max-width: 1200px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .copy {
+    max-width: 760px;
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 760px) {
   .section {
     grid-template-columns: 1fr;

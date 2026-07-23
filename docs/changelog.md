@@ -48,3 +48,6 @@ Fixed CTA alignment in the Process and FAQ grid sections.
 
 Reordered screenshots for GNK.club and Litsil, brought the middle Smartway
 screenshot forward, and added an interactive cursor spotlight to the stack.
+
+Improved responsive layouts below 1200, 900, and 740 pixels, prevented
+portfolio clipping, and added touch-swipe project navigation.

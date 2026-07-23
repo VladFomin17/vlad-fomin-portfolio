@@ -64,3 +64,17 @@
     margin-top: 3rem;
   }
 }
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .card h3 {
+    margin-top: 3rem;
+  }
+}

@@ -81,6 +81,13 @@
   }
 }
 
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .answer {
     transition: none;

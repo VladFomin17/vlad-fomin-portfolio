@@ -17,5 +17,6 @@
 - 2026-07-23 - Smoothed carousel transitions and made FAQ single-open.
 - 2026-07-23 - Fixed Process and FAQ CTA alignment.
 - 2026-07-23 - Refined screenshot order and added stack cursor interaction.
+- 2026-07-23 - Improved tablet/mobile layouts and added portfolio swipe navigation.
 
 Move completed tasks here with date.

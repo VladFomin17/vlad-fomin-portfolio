@@ -230,6 +230,12 @@ h2 {
   }
 }
 
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
+
 @media (max-width: 720px) {
   .site-header {
     padding: 1.25rem;
