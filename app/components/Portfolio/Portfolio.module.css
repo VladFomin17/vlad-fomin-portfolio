@@ -236,6 +236,17 @@
   }
 }
 
+@media (min-width: 601px) and (max-width: 900px) {
+  .frame {
+    width: 68%;
+    background: white;
+  }
+
+  .frame img {
+    object-fit: contain;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .frame,
   .arrow,
