@@ -5,6 +5,7 @@ import { Portfolio } from "./components/Portfolio";
 import { Process } from "./components/Process";
 import { Services } from "./components/Services";
 import { Stack } from "./components/Stack";
+import { Reveal } from "./components/Reveal";
 
 const navigation = [
   ["Обо мне", "#about"],
@@ -53,23 +54,22 @@ export default function HomePage() {
             Написать мне <span aria-hidden="true">↗</span>
           </a>
         </div>
+        <div className="proof-strip" aria-label="Форматы интерфейсов">
+          <span className="proof-label">Форматы интерфейсов</span>
+          <span>Админ-панели</span>
+          <span>Дашборды</span>
+          <span>Лендинги</span>
+          <span>Системы с данными</span>
+        </div>
       </section>
 
-      <section className="proof-strip" aria-label="Форматы интерфейсов">
-        <span className="proof-label">Форматы интерфейсов</span>
-        <span>Админ-панели</span>
-        <span>Дашборды</span>
-        <span>Лендинги</span>
-        <span>Системы с данными</span>
-      </section>
-
-      <About />
-      <Services />
-      <Stack />
-      <Portfolio />
-      <Process />
-      <Faq />
-      <Contact />
+      <Reveal><About /></Reveal>
+      <Reveal><Portfolio /></Reveal>
+      <Reveal><Services /></Reveal>
+      <Reveal><Stack /></Reveal>
+      <Reveal><Process /></Reveal>
+      <Reveal><Faq /></Reveal>
+      <Reveal><Contact /></Reveal>
       <a className="back-to-top" href="#top" aria-label="Вернуться наверх">
         ↑
       </a>

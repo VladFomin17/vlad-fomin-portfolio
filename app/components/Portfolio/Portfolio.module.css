@@ -1,7 +1,7 @@
 .section {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 8rem 2rem;
+  padding: 5.5rem 2rem;
 }
 
 .heading {
@@ -144,7 +144,7 @@
 }
 
 @media (max-width: 760px) {
-  .section { padding: 5rem 1.25rem; }
+  .section { padding: 3.5rem 1.25rem; }
   .project {
     grid-template-columns: 1fr;
     gap: 1rem;

@@ -30,3 +30,7 @@ Added the supplied FAQ content and primary Telegram and email contact actions.
 Refined the landing page with a visible frontend-dev brand, animated stack
 constellation, compact layered project carousel, updated project order, a
 third Smartway screenshot, and a back-to-top control.
+
+Added a contact CTA after each major section, scroll-triggered reveal motion,
+reduced mobile hero height, tighter section spacing, and moved services below
+the portfolio.

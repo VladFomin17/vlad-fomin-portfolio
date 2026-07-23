@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Portfolio.module.css";
+import { SectionCta } from "../SectionCta";
 
 const projects = [
   {
@@ -114,6 +115,7 @@ export function Portfolio() {
           </article>
         ))}
       </div>
+      <SectionCta />
     </section>
   );
 }

@@ -4,7 +4,7 @@
   gap: 6rem;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 9rem 2rem;
+  padding: 5.5rem 2rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -54,6 +54,6 @@
   .section {
     grid-template-columns: 1fr;
     gap: 3rem;
-    padding: 5rem 1.25rem;
+    padding: 3.5rem 1.25rem;
   }
 }

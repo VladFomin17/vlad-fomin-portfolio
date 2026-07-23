@@ -1,4 +1,5 @@
 import styles from "./Services.module.css";
+import { SectionCta } from "../SectionCta";
 
 const services = [
   {
@@ -34,6 +35,7 @@ export function Services() {
           </article>
         ))}
       </div>
+      <SectionCta />
     </section>
   );
 }

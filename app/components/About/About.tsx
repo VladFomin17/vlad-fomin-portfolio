@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import { SectionCta } from "../SectionCta";
 
 export function About() {
   return (
@@ -18,6 +19,7 @@ export function About() {
           масштабируемыми, чтобы новый функционал можно было добавлять без
           полной переработки существующих экранов.
         </p>
+        <SectionCta />
       </div>
     </section>
   );

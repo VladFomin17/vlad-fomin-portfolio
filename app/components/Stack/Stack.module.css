@@ -1,7 +1,7 @@
 .section {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 9rem 2rem;
+  padding: 5.5rem 2rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -100,7 +100,7 @@
 }
 
 @media (max-width: 760px) {
-  .section { padding: 5rem 1.25rem; }
+  .section { padding: 3.5rem 1.25rem; }
   .constellation { min-height: 620px; }
   .badge { font-size: 0.7rem; }
 }

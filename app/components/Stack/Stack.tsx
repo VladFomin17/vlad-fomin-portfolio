@@ -1,4 +1,5 @@
 import styles from "./Stack.module.css";
+import { SectionCta } from "../SectionCta";
 
 const technologies = [
   "React", "TypeScript", "JavaScript", "Next.js", "Vite", "React Router",
@@ -22,6 +23,7 @@ export function Stack() {
           </span>
         ))}
       </div>
+      <SectionCta />
     </section>
   );
 }

@@ -1,4 +1,5 @@
 import styles from "./Process.module.css";
+import { SectionCta } from "../SectionCta";
 
 const steps = [
   ["Понять задачу", "Цель пользователя и бизнес-логика продукта."],
@@ -25,6 +26,7 @@ export function Process() {
           </li>
         ))}
       </ol>
+      <SectionCta />
     </section>
   );
 }

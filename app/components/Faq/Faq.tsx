@@ -1,4 +1,5 @@
 import styles from "./Faq.module.css";
+import { SectionCta } from "../SectionCta";
 
 const questions = [
   {
@@ -38,6 +39,7 @@ export function Faq() {
           </details>
         ))}
       </div>
+      <SectionCta />
     </section>
   );
 }
