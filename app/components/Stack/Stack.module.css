@@ -99,6 +99,13 @@
   50% { transform: translate3d(0, -7px, 0); }
 }
 
+.section > a {
+  display: flex;
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (max-width: 760px) {
   .section { padding: 3.5rem 1.25rem; }
   .constellation { min-height: 620px; }

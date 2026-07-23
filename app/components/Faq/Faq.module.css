@@ -50,6 +50,13 @@
   line-height: 1.65;
 }
 
+.section > a {
+  display: flex;
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (max-width: 760px) {
   .section {
     grid-template-columns: 1fr;

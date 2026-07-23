@@ -37,3 +37,6 @@ the portfolio.
 
 Made section CTAs green by default and added centered cyclic portfolio
 navigation with previous/next arrows.
+
+Fixed carousel positioning by switching to a robust centered active-card
+implementation and centered CTAs in all sections except About and Contact.
