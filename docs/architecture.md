@@ -2,12 +2,12 @@
 
 ## Current structure
 
-- `app/layout.tsx` — global metadata and document shell.
-- `app/page.tsx` — single landing-page route.
-- `app/components/Portfolio/` — data-backed project section and gallery styles.
-- `app/components/About/`, `Services/`, `Process/`, `Contact/` — semantic landing-page sections.
-- `app/globals.css` — shared design tokens and responsive layout styles.
-- `docs/` — project documentation.
+- `app/layout.tsx` - global metadata and document shell.
+- `app/page.tsx` - single landing-page route.
+- `app/components/Portfolio/` - data-backed project section and gallery styles.
+- `app/components/About/`, `Services/`, `Process/`, `Contact/` - semantic landing-page sections.
+- `app/globals.css` - shared design tokens and responsive layout styles.
+- `docs/` - project documentation.
 
 ## Strategy
 

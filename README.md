@@ -6,8 +6,7 @@ Personal portfolio website.
 
 - Next.js
 - TypeScript
-- Vite
-- SCSS Modules
+- CSS Modules
 
 ## Commands
 
@@ -19,7 +18,7 @@ pnpm build
 
 ## Project Structure
 
-src/
+app/
 
 public/
 
