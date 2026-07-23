@@ -1,0 +1,30 @@
+.section {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+}
+
+.section h2 {
+  max-width: 1000px;
+}
+
+.link {
+  display: inline-flex;
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 999px;
+  background: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.link:hover,
+.link:focus-visible {
+  background: var(--accent-strong);
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding: 6rem 1.25rem;
+  }
+}

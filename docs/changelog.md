@@ -19,3 +19,6 @@ hero section, section anchors, metadata, and shared CSS variables.
 
 Added seven source-verified portfolio projects with optimized screenshots,
 technology tags, accessible image descriptions, and responsive galleries.
+
+Added source-backed About, Services, Process, and Contact sections. Removed the
+temporary email placeholder and linked only the verified GitHub profile.

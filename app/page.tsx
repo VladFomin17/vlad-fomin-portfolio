@@ -1,7 +1,12 @@
+import { About } from "./components/About";
+import { Contact } from "./components/Contact";
 import { Portfolio } from "./components/Portfolio";
+import { Process } from "./components/Process";
+import { Services } from "./components/Services";
 
 const navigation = [
   ["Обо мне", "#about"],
+  ["Услуги", "#services"],
   ["Работы", "#portfolio"],
   ["Процесс", "#process"],
   ["Контакты", "#contact"]
@@ -53,25 +58,11 @@ export default function HomePage() {
         <span>Системы с данными</span>
       </section>
 
-      <section className="section-placeholder" id="about">
-        <p className="eyebrow">О сайте</p>
-        <h2>Портфолио на основе реальных задач и интерфейсов.</h2>
-      </section>
-
+      <About />
+      <Services />
       <Portfolio />
-
-      <section className="section-placeholder" id="process">
-        <p className="eyebrow">Процесс</p>
-        <h2>От задачи и сценариев — к понятному интерфейсу.</h2>
-      </section>
-
-      <section className="contact-placeholder" id="contact">
-        <p className="eyebrow">Контакты</p>
-        <h2>Есть задача? Давайте обсудим её.</h2>
-        <a className="button button-primary" href="mailto:hello@example.com">
-          Написать на почту <span aria-hidden="true">↗</span>
-        </a>
-      </section>
+      <Process />
+      <Contact />
     </main>
   );
 }
