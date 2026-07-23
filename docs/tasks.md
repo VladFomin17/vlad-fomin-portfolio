@@ -12,5 +12,6 @@
 - 2026-07-23 - Added the supplied FAQ, Telegram, and email contacts.
 - 2026-07-23 - Added stack visualization, motion, compact project carousel, and collaboration CTA.
 - 2026-07-23 - Added per-section contact CTAs, scroll reveals, and responsive spacing improvements.
+- 2026-07-23 - Added green CTA defaults and cyclic centered portfolio navigation.
 
 Move completed tasks here with date.

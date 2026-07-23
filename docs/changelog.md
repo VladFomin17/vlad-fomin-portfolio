@@ -34,3 +34,6 @@ third Smartway screenshot, and a back-to-top control.
 Added a contact CTA after each major section, scroll-triggered reveal motion,
 reduced mobile hero height, tighter section spacing, and moved services below
 the portfolio.
+
+Made section CTAs green by default and added centered cyclic portfolio
+navigation with previous/next arrows.

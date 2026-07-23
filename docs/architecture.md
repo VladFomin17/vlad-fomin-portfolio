@@ -16,8 +16,9 @@
 The first version uses one route and server-rendered React components. Project
 images live under `public/projects/`, render through `next/image`, and use a
 CSS scroll-snap portfolio carousel and layered screenshot gallery without
-client-side state. Decorative motion uses CSS keyframes and respects
-`prefers-reduced-motion`.
+client-side state. The portfolio carousel uses a small client-side index for
+cyclic arrow navigation and keeps the active card centered. Decorative motion
+uses CSS keyframes and respects `prefers-reduced-motion`.
 
 Content sections are revealed once as they enter the viewport. The wrapper
 keeps server-rendered content visible before hydration and disables motion for

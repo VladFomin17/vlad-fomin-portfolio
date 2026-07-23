@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState, type CSSProperties } from "react";
 import styles from "./Portfolio.module.css";
 import { SectionCta } from "../SectionCta";
 
@@ -76,15 +79,38 @@ const projects = [
 ] as const;
 
 export function Portfolio() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const move = (direction: number) => {
+    setActiveIndex((current) => (current + direction + projects.length) % projects.length);
+  };
+
   return (
     <section className={styles.section} id="portfolio">
       <div className={styles.heading}>
         <p className="eyebrow">Избранные работы</p>
         <h2>Несколько интерфейсов, собранных вокруг реальных задач.</h2>
       </div>
-      <div className={styles.carousel} aria-label="Галерея проектов">
-        {projects.map((project, index) => (
-          <article className={styles.project} key={project.title}>
+      <div className={styles.carousel}>
+        <button
+          className={styles.arrow}
+          type="button"
+          onClick={() => move(-1)}
+          aria-label="Предыдущий проект"
+        >
+          ←
+        </button>
+        <div className={styles.viewport} aria-live="polite">
+          <div
+            className={styles.track}
+            style={{ "--active-index": activeIndex } as CSSProperties}
+          >
+            {projects.map((project, index) => (
+              <article
+                className={`${styles.project} ${index === activeIndex ? styles.active : ""}`}
+                key={project.title}
+                aria-hidden={index !== activeIndex}
+              >
             <div className={styles.copy}>
               <span className={styles.number}>{String(index + 1).padStart(2, "0")}</span>
               <p className={styles.type}>{project.type}</p>
@@ -113,8 +139,21 @@ export function Portfolio() {
               ))}
             </div>
           </article>
-        ))}
+            ))}
+          </div>
+        </div>
+        <button
+          className={styles.arrow}
+          type="button"
+          onClick={() => move(1)}
+          aria-label="Следующий проект"
+        >
+          →
+        </button>
       </div>
+      <p className={styles.position} aria-live="polite">
+        {String(activeIndex + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")} · {projects[activeIndex].title}
+      </p>
       <SectionCta />
     </section>
   );
