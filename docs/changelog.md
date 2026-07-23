@@ -40,3 +40,8 @@ navigation with previous/next arrows.
 
 Fixed carousel positioning by switching to a robust centered active-card
 implementation and centered CTAs in all sections except About and Contact.
+
+Smoothed carousel transitions and replaced FAQ details with an accessible
+single-open accordion.
+
+Fixed CTA alignment in the Process and FAQ grid sections.

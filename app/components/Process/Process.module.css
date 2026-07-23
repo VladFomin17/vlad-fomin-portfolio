@@ -40,6 +40,7 @@
 .section > a {
   display: flex;
   width: max-content;
+  grid-column: 1 / -1;
   margin-right: auto;
   margin-left: auto;
 }
