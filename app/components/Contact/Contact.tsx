@@ -5,6 +5,9 @@ export function Contact() {
     <section className={styles.section} id="contact">
       <p className="eyebrow">Контакты</p>
       <h2>Есть задача с интерфейсом? Давайте обсудим.</h2>
+      <p className={styles.note}>
+        Готов рассмотреть долгосрочное сотрудничество и трудоустройство.
+      </p>
       <div className={styles.links}>
         <a
           className={styles.primaryLink}

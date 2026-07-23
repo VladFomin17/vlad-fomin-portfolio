@@ -4,10 +4,12 @@ import { Faq } from "./components/Faq";
 import { Portfolio } from "./components/Portfolio";
 import { Process } from "./components/Process";
 import { Services } from "./components/Services";
+import { Stack } from "./components/Stack";
 
 const navigation = [
   ["Обо мне", "#about"],
   ["Услуги", "#services"],
+  ["Стек", "#stack"],
   ["Работы", "#portfolio"],
   ["Процесс", "#process"],
   ["FAQ", "#faq"],
@@ -18,8 +20,8 @@ export default function HomePage() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Влад Фомин, на главную">
-          ВФ<span>.</span>
+        <a className="brand" href="#top" aria-label="На главную">
+          Frontend dev<span>.</span>
         </a>
         <nav aria-label="Основная навигация">
           {navigation.map(([label, href]) => (
@@ -53,7 +55,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="proof-strip" aria-label="Фокус работы">
+      <section className="proof-strip" aria-label="Форматы интерфейсов">
+        <span className="proof-label">Форматы интерфейсов</span>
         <span>Админ-панели</span>
         <span>Дашборды</span>
         <span>Лендинги</span>
@@ -62,10 +65,14 @@ export default function HomePage() {
 
       <About />
       <Services />
+      <Stack />
       <Portfolio />
       <Process />
       <Faq />
       <Contact />
+      <a className="back-to-top" href="#top" aria-label="Вернуться наверх">
+        ↑
+      </a>
     </main>
   );
 }

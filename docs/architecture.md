@@ -5,7 +5,7 @@
 - `app/layout.tsx` - global metadata and document shell.
 - `app/page.tsx` - single landing-page route.
 - `app/components/Portfolio/` - data-backed project section and gallery styles.
-- `app/components/About/`, `Services/`, `Process/`, `Faq/`, `Contact/` - semantic landing-page sections.
+- `app/components/About/`, `Services/`, `Stack/`, `Process/`, `Faq/`, `Contact/` - semantic landing-page sections.
 - `app/globals.css` - shared design tokens and responsive layout styles.
 - `docs/` - project documentation.
 
@@ -13,7 +13,9 @@
 
 The first version uses one route and server-rendered React components. Project
 images live under `public/projects/`, render through `next/image`, and use a
-CSS scroll-snap gallery without client-side state.
+CSS scroll-snap portfolio carousel and layered screenshot gallery without
+client-side state. Decorative motion uses CSS keyframes and respects
+`prefers-reduced-motion`.
 
 Metadata is defined in `app/layout.tsx`, including the page title,
 description, and Open Graph basics.

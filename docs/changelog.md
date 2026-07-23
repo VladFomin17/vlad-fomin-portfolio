@@ -26,3 +26,7 @@ temporary email placeholder and linked only the verified GitHub profile.
 Aligned the README and task list with the implemented project structure.
 
 Added the supplied FAQ content and primary Telegram and email contact actions.
+
+Refined the landing page with a visible frontend-dev brand, animated stack
+constellation, compact layered project carousel, updated project order, a
+third Smartway screenshot, and a back-to-top control.
