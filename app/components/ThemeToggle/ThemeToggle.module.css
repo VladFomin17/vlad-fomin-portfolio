@@ -1,0 +1,49 @@
+.button {
+  display: grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  flex: 0 0 2.6rem;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  border-color: var(--ink);
+  transform: rotate(12deg);
+}
+
+.icon {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+:global([data-theme="dark"]) .icon {
+  background: transparent;
+}
+
+:global([data-theme="dark"]) .icon::after {
+  position: absolute;
+  top: -4px;
+  left: 3px;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--card);
+  content: "";
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}

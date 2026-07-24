@@ -6,6 +6,16 @@ const title = "Влад Фомин — Frontend-разработчик React и 
 const description =
   "Портфолио frontend-разработчика Владислава Фомина: административные панели, дашборды, лендинги и интерфейсы для работы с данными.";
 
+const themeScript = `
+try {
+  const saved = localStorage.getItem("portfolio-theme");
+  const theme = saved === "light" || saved === "dark"
+    ? saved
+    : matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.dataset.theme = theme;
+} catch {}
+`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title,
@@ -60,7 +70,10 @@ export default function RootLayout({
   children
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ru">
+    <html lang="ru" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>
         {children}
         <script

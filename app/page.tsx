@@ -6,6 +6,7 @@ import { Process } from "./components/Process";
 import { Services } from "./components/Services";
 import { Stack } from "./components/Stack";
 import { Reveal } from "./components/Reveal";
+import { ThemeToggle } from "./components/ThemeToggle";
 
 const navigation = [
   ["Обо мне", "#about"],
@@ -31,9 +32,12 @@ export default function HomePage() {
             </a>
           ))}
         </nav>
-        <a className="header-cta" href="#contact">
-          Обсудить проект
-        </a>
+        <div className="header-controls">
+          <ThemeToggle />
+          <a className="header-cta" href="#contact">
+            Обсудить проект
+          </a>
+        </div>
       </header>
 
       <section className="hero" id="top">

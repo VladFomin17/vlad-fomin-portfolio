@@ -35,6 +35,7 @@
 
 .primaryLink {
   background: var(--accent);
+  color: var(--accent-text);
 }
 
 .primaryLink:hover,

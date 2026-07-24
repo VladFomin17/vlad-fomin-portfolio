@@ -22,5 +22,6 @@
 - 2026-07-23 - Fixed mobile rendering of contact arrows.
 - 2026-07-25 - Added production SEO metadata and structured data.
 - 2026-07-25 - Added Google Search Console verification metadata.
+- 2026-07-25 - Added a persisted dark theme and header toggle.
 
 Move completed tasks here with date.

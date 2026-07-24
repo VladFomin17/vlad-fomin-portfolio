@@ -60,3 +60,6 @@ Added production canonical metadata, robots.txt, sitemap.xml, Twitter cards,
 an Open Graph image, and Person/WebSite JSON-LD.
 
 Added Google Search Console site ownership verification.
+
+Added a persisted light/dark theme with a header toggle and system preference
+fallback.

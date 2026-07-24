@@ -22,6 +22,12 @@
   cursor: crosshair;
 }
 
+:global([data-theme="dark"]) .constellation {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(167, 232, 92, 0.16), transparent 28%),
+    linear-gradient(135deg, #111815, #18221e 48%, #101713);
+}
+
 .cursorGlow {
   position: absolute;
   z-index: 1;
@@ -93,6 +99,11 @@
   transform: translate(-50%, -50%);
 }
 
+:global([data-theme="dark"]) .core {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
 .badge {
   position: absolute;
   z-index: 2;
@@ -104,6 +115,12 @@
   font-size: 0.78rem;
   font-weight: 700;
   animation: drift 6s ease-in-out infinite;
+}
+
+:global([data-theme="dark"]) .badge {
+  border-color: var(--line);
+  background: rgba(21, 28, 25, 0.88);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
 }
 
 .badge:nth-child(2n) { animation-delay: -1.4s; }
