@@ -1,16 +1,56 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { siteUrl } from "./site";
+
+const title = "Влад Фомин — Frontend-разработчик React и Next.js";
+const description =
+  "Портфолио frontend-разработчика Владислава Фомина: административные панели, дашборды, лендинги и интерфейсы для работы с данными.";
 
 export const metadata: Metadata = {
-  title: "Влад Фомин — Frontend-разработчик",
-  description:
-    "Портфолио Владислава Фомина: интерфейсы административных панелей, дашбордов и лендингов.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: {
+    canonical: "/"
+  },
   openGraph: {
-    title: "Влад Фомин — Frontend-разработчик",
-    description:
-      "Интерфейсы административных панелей, дашбордов и лендингов.",
+    title,
+    description,
+    url: "/",
+    siteName: "Портфолио Владислава Фомина",
+    locale: "ru_RU",
     type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description
   }
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Портфолио Владислава Фомина",
+      inLanguage: "ru-RU"
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: "Владислав Фомин",
+      url: siteUrl,
+      jobTitle: "Frontend-разработчик",
+      email: "mailto:fominvladosik@gmail.com",
+      sameAs: [
+        "https://github.com/VladFomin17",
+        "https://t.me/Vlad_Fomii"
+      ]
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -18,7 +58,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ru">
-      <body>{children}</body>
+      <body>
+        {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </body>
     </html>
   );
 }

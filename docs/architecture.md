@@ -3,6 +3,8 @@
 ## Current structure
 
 - `app/layout.tsx` - global metadata and document shell.
+- `app/site.ts` - canonical production URL shared by metadata routes.
+- `app/robots.ts`, `app/sitemap.ts`, static social images - crawl and share metadata.
 - `app/page.tsx` - single landing-page route.
 - `app/components/Portfolio/` - data-backed project section and gallery styles.
 - `app/components/About/`, `Services/`, `Stack/`, `Process/`, `Faq/`, `Contact/` - semantic landing-page sections.
@@ -25,7 +27,7 @@ keeps server-rendered content visible before hydration and disables motion for
 users who prefer reduced motion.
 
 Metadata is defined in `app/layout.tsx`, including the page title,
-description, and Open Graph basics.
+description, canonical URL, Open Graph, Twitter, and JSON-LD basics.
 
 Content is limited to statements supplied by the portfolio owner. FAQ answers,
 Telegram, and email are rendered directly from the confirmed contact details.

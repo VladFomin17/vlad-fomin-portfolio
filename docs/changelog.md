@@ -55,3 +55,6 @@ portfolio clipping, and added touch-swipe project navigation.
 Prevented screenshot edge cropping between 601 and 900 pixels.
 
 Replaced emoji-prone diagonal arrows with consistently rendered CSS arrows.
+
+Added production canonical metadata, robots.txt, sitemap.xml, Twitter cards,
+an Open Graph image, and Person/WebSite JSON-LD.
