@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description
+  },
+  verification: {
+    google: "6s2K6cpMer5LKKglisMG8NjSWugkfKvU8jes467fbss"
   }
 };
 

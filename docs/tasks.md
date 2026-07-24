@@ -21,5 +21,6 @@
 - 2026-07-23 - Fixed intermediate-width screenshot cropping.
 - 2026-07-23 - Fixed mobile rendering of contact arrows.
 - 2026-07-25 - Added production SEO metadata and structured data.
+- 2026-07-25 - Added Google Search Console verification metadata.
 
 Move completed tasks here with date.
