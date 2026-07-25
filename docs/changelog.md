@@ -66,3 +66,6 @@ fallback.
 
 Made the sticky header hide while scrolling down and return as soon as the
 visitor scrolls up.
+
+Added a theme-aware CSS grid and soft accent glows to give the page background
+more depth without image assets.

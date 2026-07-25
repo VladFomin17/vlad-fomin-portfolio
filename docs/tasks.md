@@ -24,5 +24,6 @@
 - 2026-07-25 - Added Google Search Console verification metadata.
 - 2026-07-25 - Added a persisted dark theme and header toggle.
 - 2026-07-25 - Added direction-aware sticky header behavior.
+- 2026-07-25 - Added a theme-aware decorative page background.
 
 Move completed tasks here with date.
