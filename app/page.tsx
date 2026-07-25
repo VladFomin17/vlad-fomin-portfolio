@@ -6,6 +6,7 @@ import { Process } from "./components/Process";
 import { Services } from "./components/Services";
 import { Stack } from "./components/Stack";
 import { Reveal } from "./components/Reveal";
+import { SiteHeader } from "./components/SiteHeader";
 import { ThemeToggle } from "./components/ThemeToggle";
 
 const navigation = [
@@ -21,7 +22,7 @@ const navigation = [
 export default function HomePage() {
   return (
     <main>
-      <header className="site-header">
+      <SiteHeader>
         <a className="brand" href="#top" aria-label="На главную">
           Frontend dev<span>.</span>
         </a>
@@ -38,7 +39,7 @@ export default function HomePage() {
             Обсудить проект
           </a>
         </div>
-      </header>
+      </SiteHeader>
 
       <section className="hero" id="top">
         <p className="eyebrow">Frontend developer · React · Next.js</p>

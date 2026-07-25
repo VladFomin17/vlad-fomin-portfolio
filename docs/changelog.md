@@ -63,3 +63,6 @@ Added Google Search Console site ownership verification.
 
 Added a persisted light/dark theme with a header toggle and system preference
 fallback.
+
+Made the sticky header hide while scrolling down and return as soon as the
+visitor scrolls up.

@@ -10,6 +10,7 @@
 - `app/components/About/`, `Services/`, `Stack/`, `Process/`, `Faq/`, `Contact/` - semantic landing-page sections.
 - `app/components/Reveal/` - client-only IntersectionObserver wrapper for scroll reveals.
 - `app/components/SectionCta/` - shared contact CTA used after content sections.
+- `app/components/SiteHeader/` - sticky header that reacts to scroll direction.
 - `app/components/ThemeToggle/` - persisted light/dark theme control.
 - `app/globals.css` - shared design tokens and responsive layout styles.
 - `docs/` - project documentation.
@@ -29,6 +30,10 @@ users who prefer reduced motion.
 
 Theme tokens live in `app/globals.css`. A small inline script applies the saved
 or system theme before paint to avoid a color flash.
+
+The sticky header uses a passive scroll listener throttled with
+`requestAnimationFrame`. It hides while scrolling down and returns immediately
+when scrolling up.
 
 Metadata is defined in `app/layout.tsx`, including the page title,
 description, canonical URL, Open Graph, Twitter, and JSON-LD basics.

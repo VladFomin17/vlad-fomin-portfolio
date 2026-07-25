@@ -23,5 +23,6 @@
 - 2026-07-25 - Added production SEO metadata and structured data.
 - 2026-07-25 - Added Google Search Console verification metadata.
 - 2026-07-25 - Added a persisted dark theme and header toggle.
+- 2026-07-25 - Added direction-aware sticky header behavior.
 
 Move completed tasks here with date.
